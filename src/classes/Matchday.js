@@ -37,6 +37,7 @@ Matchday.fromJson = function(json) {
 
 Matchday.prototype.setTeams = function(team1, team2) {
     var self = this;
+    // Inform previous players that they're not part of this matchday anymore
     this.team1.forEach(function(p) { p.player.removeMatch(self); });
     this.team2.forEach(function(p) { p.player.removeMatch(self); });
     this.team1 = team1;

@@ -9,6 +9,8 @@ function Player(name, picUrl, playerData) {
     this.matches = [];
     // For each match, contains the player's data for that specific match
     this.matchDatas = [];
+
+    // All values below are volatile and/or dynamically derived from the data above
     // Total goals scored by player that year
     this.goalCount = 0;
     // Matches the player has participated in
@@ -74,7 +76,6 @@ Player.prototype.getPlayerData = function() {
     }
     // Adjusted quality
     result.adjustedQuality = result.quality + this.getQualityAdjustment();
-    // console.log(this.name, ": ", result.quality, " -> ", result.adjustedQuality);
     // Return
     return result;
 };
@@ -234,7 +235,6 @@ Player.prototype.getQualityAdjustment = function() {
                 switches++;
         }
     }
-    // console.log("\n", diff.toFixed(1), " based on ", won, draw, lost, " and ", switches, " switches");
     var result = diff; // Math.pow(Math.abs(diff), 1.5) * 2;
     // if (diff < 0) { result = -result; }
     return Math.round(result);

@@ -8,6 +8,19 @@
   </div>
 </template>
 
+<script>
+
+export default {
+  name: "App",
+  data () { return {
+    players: [],
+    matchdays: [],
+    year: new Date().getFullYear()
+  }}
+}
+
+</script>
+
 <style lang="less">
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
