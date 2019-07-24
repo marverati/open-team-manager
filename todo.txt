@@ -1,0 +1,15 @@
+[X] Set up repository
+[X] Transfer classes from pervious project
+[ ] Refine class structure
+[ ] Typescript?
+[ ] Load data from backend and transform into class instances
+[ ] Display some info on screen (e.g. simple table player name -> points)
+[ ] Create fancier player table
+[ ] History of match days
+[ ] Switch between different years
+[ ] Single player overview page
+[ ] Global statistics page
+[ ] Adding new players
+[ ] Player skill editor (hidden from public)
+[ ] Team Generator
+[ ] Player modifiers (cold, muscle, as somebody else...)
